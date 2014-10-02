@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4C3666E6-C28F-4FAA-A4E9-EA25C2457044</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LYHCollectionViewController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>623F2E69998BDB4874679DC870B7D8CA2E9A65D0</key>
+		<string>https://github.com/TheBlackApple/LYHGravityCollectionViewTransition.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LYHCollectionViewController.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>623F2E69998BDB4874679DC870B7D8CA2E9A65D0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TheBlackApple/LYHGravityCollectionViewTransition.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>623F2E69998BDB4874679DC870B7D8CA2E9A65D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>623F2E69998BDB4874679DC870B7D8CA2E9A65D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LYHGravityCollectionViewTransition</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -20,11 +20,12 @@ static CGFloat kItemSize = 150.0f;
 -(id)init{
     if (self = [super init]) {
         self.dynamicAnimator = [[UIDynamicAnimator alloc]initWithCollectionViewLayout:self];
+        //重力行为
         UIGravityBehavior * gravityBehaviour = [[UIGravityBehavior alloc]initWithItems:@[]];
         gravityBehaviour.gravityDirection = CGVectorMake(0, 1);
         self.gravityBehaviour = gravityBehaviour;
         [self.dynamicAnimator addBehavior:gravityBehaviour];
-        
+        //碰撞行为
         UICollisionBehavior * collisionBehaviour = [[UICollisionBehavior alloc]initWithItems:@[]];
         [self.dynamicAnimator addBehavior:collisionBehaviour];
         self.collisionBehaviour = collisionBehaviour;
@@ -37,12 +38,15 @@ static CGFloat kItemSize = 150.0f;
 }
 
 
--(void)prepareForCollectionViewUpdates:(NSArray *)updateItems{
+-(void)prepareForCollectionViewUpdates:(NSArray *)updateItems
+{
     [super prepareForCollectionViewUpdates:updateItems];
+    
     [updateItems enumerateObjectsUsingBlock:^(UICollectionViewUpdateItem * updateItem, NSUInteger idx, BOOL *stop) {
         if (updateItem.updateAction == UICollectionUpdateActionInsert) {
             UICollectionViewLayoutAttributes * attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:updateItem.indexPathAfterUpdate];
             attributes.frame = CGRectMake(CGRectGetMaxX(self.collectionView.frame) + kItemSize, 100, kItemSize, kItemSize);
+            
             UIAttachmentBehavior * attachmentBehaviour = [[UIAttachmentBehavior alloc]initWithItem:attributes attachedToAnchor:attachmentPoint];
             attachmentBehaviour.length = 300;
             attachmentBehaviour.damping = 0.4;

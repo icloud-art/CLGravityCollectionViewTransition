@@ -64,7 +64,7 @@ static NSString * CellIndentifier = @"Cell";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     LYHCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIndentifier forIndexPath:indexPath];
-    NSString * imageName = [NSString stringWithFormat:@"%d.jpg",indexPath.row % 16];
+    NSString * imageName = [NSString stringWithFormat:@"%ld.jpg",indexPath.row % 16];
     [cell setImage:[UIImage imageNamed:imageName]];
     return cell;
 }
