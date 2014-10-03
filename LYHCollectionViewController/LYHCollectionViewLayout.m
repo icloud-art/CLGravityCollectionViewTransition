@@ -49,7 +49,7 @@ static CGFloat kItemSize = 150.0f;
             
             UIAttachmentBehavior * attachmentBehaviour = [[UIAttachmentBehavior alloc]initWithItem:attributes attachedToAnchor:attachmentPoint];
             attachmentBehaviour.length = 300;
-            attachmentBehaviour.damping = 0.4;
+            attachmentBehaviour.damping = 0.4;//阻尼
             attachmentBehaviour.frequency = 1.0f;
             [self.dynamicAnimator addBehavior:attachmentBehaviour];
             [self.gravityBehaviour addItem:attributes];
