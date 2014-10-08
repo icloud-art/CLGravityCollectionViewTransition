@@ -9,7 +9,7 @@
 #import "LYHCollectionViewCell.h"
 
 @interface LYHCollectionViewCell()
-@property (nonatomic,weak) UIImageView * imageView;
+
 @end
 
 @implementation LYHCollectionViewCell

@@ -10,4 +10,5 @@
 
 @interface LYHCollectionViewCell : UICollectionViewCell
 - (void)setImage:(UIImage *)image;
+@property (nonatomic,weak) UIImageView * imageView;
 @end
