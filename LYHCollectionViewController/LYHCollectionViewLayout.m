@@ -31,6 +31,7 @@ static CGFloat kItemSize = 150.0f;
         self.collisionBehaviour = collisionBehaviour;
     }
     return self;
+    
 }
 
 -(CGSize)collectionViewContentSize{
